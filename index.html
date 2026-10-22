@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Design and 3D Printing of Eco-efficient Multimaterial Topology-Optimised Structures combining carbon fibre and bamboo composites.">
+  <meta name="keywords" content="Topology Optimization, Multimaterial, 3D Printing, Carbon Fibre, Bamboo, Sustainability, CO2, Eco-efficient, Additive Manufacturing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three-dimensional printing of Eco-efficient multimaterial topology optimisation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    /* ── typography ── */
+    body { font-family: 'Google Sans', 'Noto Sans', sans-serif; }
+
+    /* ── hero / header ── */
+    .publication-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    @media (min-width: 768px) { .publication-title { font-size: 2.5rem; } }
+
+    .publication-authors a { color: #4a90d9; }
+    .publication-authors a:hover { text-decoration: underline; }
+
+    .author-block { white-space: nowrap; }
+
+    /* ── link buttons ── */
+    .link-block .button.is-rounded {
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.4em 1em;
+      margin: 0.25rem;
+    }
+
+    /* ── teaser ── */
+    .teaser-img {
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      max-width: 100%;
+    }
+
+    /* ── section figures ── */
+    .result-img {
+      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      max-width: 100%;
+    }
+
+    figure figcaption {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    /* ── pipeline steps ── */
+    .pipeline-step {
+      background: #f5f8ff;
+      border-left: 4px solid #4a90d9;
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .pipeline-step h4 { font-weight: 700; color: #2c5282; margin-bottom: 0.25rem; }
+
+    /* ── highlight box ── */
+    .highlight-box {
+      background: linear-gradient(135deg, #e8f4fd 0%, #f0fff4 100%);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .highlight-box .stat { font-size: 2rem; font-weight: 800; color: #276749; }
+    .highlight-box .stat-label { font-size: 0.85rem; color: #555; }
+
+    /* ── bibtex ── */
+    pre code { font-size: 0.82rem; }
+
+    /* ── footer ── */
+    .footer { background: #fafafa; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow:1; justify-content:center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Shaping Matter Lab</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://www.shapingmatterlab.com/" target="_blank">Lab Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <h1 class="title is-2 publication-title">
+            Three-dimensional printing of Eco-efficient<br>
+            multimaterial topology optimisation
+          </h1>
+
+          <!-- Authors -->
+          <div class="is-size-5 publication-authors" style="margin-top:1rem;">
+            <span class="author-block"><a href="https://scholar.google.com/scholar?q=Muhamad+Amani">Muhamad Amani</a><sup>1</sup>,&nbsp;</span>
+            <span class="author-block">Gustavo Asai<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">Chintan Jansari<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">Alex Luijten<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">Tanuj Agrawal<sup>1</sup>,&nbsp;</span>
+            <span class="author-block">Frédéric Lachaud<sup>2</sup>,&nbsp;</span>
+            <span class="author-block">Joseph Morlier<sup>2</sup>,&nbsp;</span>
+            <span class="author-block">Kunal Masania<sup>1</sup></span>
+          </div>
+
+          <!-- Affiliations -->
+          <div class="is-size-6 publication-authors" style="margin-top:0.5rem; color:#555;">
+            <span class="author-block"><sup>1</sup>Shaping Matter Lab, Delft University of Technology&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>ISAE-SUPAERO, Université de Toulouse</span>
+          </div>
+
+          <!-- Link Buttons -->
+          <div class="column has-text-centered" style="margin-top:1.5rem;">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark"
+                   title="Coming soon">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper (coming soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/gj-asai/MMEcoTopOpt" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Topology Optimisation</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/matlab" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>MM Slith3r (MATLAB)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/python" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>MM Slith3r (Python GUI)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ TEASER FIGURE ══════════════ -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <figure>
+        <img src="./static/images/fig1.png" class="teaser-img" alt="Workflow overview">
+        <figcaption style="margin-top:1rem; font-size:0.9rem; color:#444;">
+          <strong>Overview.</strong>
+          An integrated workflow: LCA environmental data and mechanical properties of carbon fibre and bamboo composites
+          feed a multi-objective topology optimisation. The resulting orientation field is converted to fibre-aligned
+          toolpaths for multimaterial 3D printing. Specimens are validated with digital image correlation (DIC).
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ ABSTRACT ══════════════ -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reducing the CO₂ footprint of high-performance structures is a central engineering challenge.
+            Carbon fibre composites offer outstanding stiffness-to-weight ratios but carry high embodied
+            energy and large cradle-to-gate emissions. Bamboo composites, by contrast, are renewable and
+            low-impact yet less stiff — making them ideal for low-stress regions of a structure.
+          </p>
+          <p>
+            We present a <strong>multimaterial topology optimisation framework</strong> that minimises
+            cradle-to-gate CO₂ while meeting stiffness and volume constraints. Two density fields (carbon
+            fibre and bamboo) and one fibre-orientation field are simultaneously optimised. Life-cycle
+            assessment (LCA) data are embedded directly into the objective via a normalised CO₂ metric,
+            allowing fair comparison across materials. The method uses UMMI-2 material interpolation,
+            convolution and Heaviside projection filters, and MMA with adjoint sensitivities.
+          </p>
+          <p>
+            The optimised orientation field is converted to print-ready G-code through a
+            <strong>Slith3r-based toolpath pipeline</strong> that generates distance-aware streamlines,
+            segments them by material mask, and exports multimaterial commands. Printed MBB-beam
+            specimens confirm the intended fibre directions and material distributions, and DIC
+            strain maps agree closely with finite-element predictions — validating the end-to-end
+            route from CO₂-aware optimisation to physical testing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ KEY RESULTS ══════════════ -->
+<section class="section" style="background:#f9f9f9;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Results</h2>
+    <div class="highlight-box columns is-centered" style="margin:2rem auto; max-width:700px;">
+      <div class="column has-text-centered">
+        <div class="stat">↓ CO₂</div>
+        <div class="stat-label">Significant footprint reduction<br>by replacing CF with bamboo<br>in low-stress regions</div>
+      </div>
+      <div class="column has-text-centered">
+        <div class="stat">≈ Stiff</div>
+        <div class="stat-label">Stiffness constraint maintained<br>while bamboo fraction grows</div>
+      </div>
+      <div class="column has-text-centered">
+        <div class="stat">DIC ✓</div>
+        <div class="stat-label">Full-field strain maps<br>match FE predictions<br>for all material mixes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ METHOD ══════════════ -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <div class="pipeline-step">
+          <h4>1 · Topology Optimisation</h4>
+          <p>Two density fields (carbon fibre + bamboo) and one fibre-orientation field are simultaneously optimised to minimise cradle-to-gate CO₂ subject to stiffness and volume constraints.</p>
+        </div>
+        <div class="pipeline-step">
+          <h4>2 · Toolpath Generation</h4>
+          <p>The optimised orientation field is converted to multimaterial G-code via <a href="https://github.com/Muhamadamani/MMEcoSlith3r" target="_blank">MM Eco Slith3r</a> — fibre-aligned streamlines clipped by material mask and exported per material.</p>
+        </div>
+        <div class="pipeline-step">
+          <h4>3 · 3D Printing &amp; Validation</h4>
+          <p>Specimens are printed on a multimaterial FFF printer and validated against FE predictions using digital image correlation (DIC).</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════ CODE ══════════════ -->
+<section class="section" style="background:#f9f9f9;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Code</h2>
+    <div class="columns is-centered">
+      <div class="column is-10 content">
+        <p>All source code is openly available:</p>
+        <ul>
+          <li>
+            <strong><a href="https://github.com/gj-asai/MMEcoTopOpt" target="_blank">Topology Optimisation</a></strong>:
+            MATLAB implementation of the multimaterial, fibre-orientation topology optimisation
+            with UMMI-2 interpolation and adjoint sensitivities (Gustavo Asai, TU Delft).
+          </li>
+          <li>
+            <strong><a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/matlab" target="_blank">MM Slith3r (MATLAB)</a></strong>:
+            Original MATLAB toolpath generator. Converts an optimised orientation field to
+            per-material G-code using even-spaced streamlines and material masks.
+          </li>
+          <li>
+            <strong><a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/python" target="_blank">MM Slith3r (Python GUI)</a></strong>:
+            Python port with a cross-platform desktop GUI. Loads VTU files directly from
+            the topology optimisation output and generates G-code with live visualisation.
+          </li>
+        </ul>
+        <div class="has-text-centered" style="margin-top:1.5rem;">
+          <a href="https://github.com/gj-asai/MMEcoTopOpt" target="_blank"
+             class="button is-dark is-rounded" style="margin:0.3rem;">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span>Topology Optimisation</span>
+          </a>
+          <a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/matlab" target="_blank"
+             class="button is-dark is-rounded" style="margin:0.3rem;">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span>MM Slith3r (MATLAB)</span>
+          </a>
+          <a href="https://github.com/Muhamadamani/MMEcoSlith3r/tree/main/python" target="_blank"
+             class="button is-dark is-rounded" style="margin:0.3rem;">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span>MM Slith3r (Python GUI)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ BIBTEX ══════════════ -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{amani2025ecomultimaterial,
+  author    = {Amani, Muhamad and Asai, Gustavo and Jansari, Chintan and Luijten, Alex
+               and Agrawal, Tanuj and Lachaud, Fr{\'{e}}d{\'{e}}ric and Morlier, Joseph
+               and Masania, Kunal},
+  title     = {Design and Three-Dimensional Printing of Eco-efficient Multimaterial Structures},
+  journal   = {Additive Manufacturing},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/gj-asai/MMEcoTopOpt" target="_blank"
+         title="Topology Optimisation">
+        <i class="fab fa-github"></i>
+      </a>
+      &nbsp;
+      <a class="icon-link" href="https://github.com/Muhamadamani/MMEcoSlith3r" target="_blank"
+         title="MM Eco Slith3r">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered" style="font-size:0.8rem; color:#888;">
+          <p>
+            Website template adapted from
+            <a href="https://nerfies.github.io" target="_blank">Nerfies</a>
+            (CC BY-SA 4.0).
+            Shaping Matter Lab · Delft University of Technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
